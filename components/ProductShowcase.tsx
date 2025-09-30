@@ -17,7 +17,7 @@ export function ProductShowcase() {
     {
       icon: Scale,
       title: "HackHub", 
-      subtitle: "Streamlined Judging & Sponsorship",
+      subtitle: "Streamlined Judging & Hosting",
       description: "Judge allocation, live scoring, sponsor tracking",
       gradient: "from-blue-500 to-indigo-600",
       features: ["Automated judging", "Real-time scoring", "Sponsor dashboard"],
