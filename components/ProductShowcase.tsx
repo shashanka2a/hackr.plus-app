@@ -11,7 +11,8 @@ export function ProductShowcase() {
       subtitle: "Effortless Hackathon Management",
       description: "AI-powered launch, team matching, support bot",
       gradient: "from-violet-500 to-purple-600",
-      features: ["AI-powered setup", "Smart team matching", "24/7 support bot"]
+      features: ["AI-powered setup", "Smart team matching", "24/7 support bot"],
+      url: "https://hackhost.club/"
     },
     {
       icon: Scale,
@@ -19,7 +20,8 @@ export function ProductShowcase() {
       subtitle: "Streamlined Judging & Sponsorship",
       description: "Judge allocation, live scoring, sponsor tracking",
       gradient: "from-blue-500 to-indigo-600",
-      features: ["Automated judging", "Real-time scoring", "Sponsor dashboard"]
+      features: ["Automated judging", "Real-time scoring", "Sponsor dashboard"],
+      url: "https://hackhub.app/"
     },
     {
       icon: UserCheck,
@@ -27,7 +29,8 @@ export function ProductShowcase() {
       subtitle: "Hire from Code, Not Resumes", 
       description: "Real coding challenges, automated evaluation",
       gradient: "from-cyan-500 to-teal-600",
-      features: ["Live coding tests", "AI evaluation", "Talent pipeline"]
+      features: ["Live coding tests", "AI evaluation", "Talent pipeline"],
+      url: "https://www.hackhire.dev/"
     }
   ];
 
@@ -47,11 +50,17 @@ export function ProductShowcase() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {products.map((product, index) => (
-            <Card 
+            <a
               key={index}
-              className="bg-white border-gray-200 hover:border-gray-300 transition-all duration-300 hover:scale-105 group cursor-pointer backdrop-blur-sm shadow-lg hover:shadow-xl"
+              href={product.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
             >
-              <CardContent className="p-8">
+              <Card 
+                className="bg-white border-gray-200 hover:border-gray-300 transition-all duration-300 group-hover:scale-105 cursor-pointer backdrop-blur-sm shadow-lg group-hover:shadow-xl"
+              >
+                <CardContent className="p-8">
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${product.gradient} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   <product.icon className="w-8 h-8 text-white" />
                 </div>
@@ -76,8 +85,9 @@ export function ProductShowcase() {
                   Learn More 
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                 </Button>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </a>
           ))}
         </div>
       </div>
