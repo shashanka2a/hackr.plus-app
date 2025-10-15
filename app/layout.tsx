@@ -23,11 +23,7 @@ export const metadata: Metadata = {
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   icons: { 
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
-      { url: "/favicon.ico", type: "image/x-icon" }
-    ]
+    icon: "/favicon.svg"
   },
 };
 
