@@ -22,7 +22,13 @@ export const metadata: Metadata = {
     url: "https://hackr.plus",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
-  icons: { icon: "/favicon.ico" },
+  icons: { 
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" }
+    ]
+  },
 };
 
 export default function RootLayout({

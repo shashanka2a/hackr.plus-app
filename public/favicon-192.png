@@ -1,0 +1,27 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <circle cx="96" cy="96" r="96" fill="url(#gradient)"/>
+  
+  <!-- Terminal/Code icon -->
+  <rect x="48" y="60" width="96" height="72" rx="12" fill="none" stroke="#FFD93D" stroke-width="12"/>
+  
+  <!-- Terminal prompt -->
+  <circle cx="60" cy="84" r="6" fill="#FFD93D"/>
+  <circle cx="60" cy="108" r="6" fill="#FFD93D"/>
+  
+  <!-- Code lines -->
+  <path d="M72 84 L120 84" stroke="#FFD93D" stroke-width="9" stroke-linecap="round"/>
+  <path d="M72 108 L108 108" stroke="#FFD93D" stroke-width="9" stroke-linecap="round"/>
+  
+  <!-- Plus symbol -->
+  <circle cx="96" cy="144" r="18" fill="#FFD93D" stroke="#FF6B35" stroke-width="6"/>
+  <path d="M96 132 L96 156 M84 144 L108 144" stroke="#FF6B35" stroke-width="9" stroke-linecap="round"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
